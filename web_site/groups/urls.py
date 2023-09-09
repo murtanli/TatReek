@@ -3,5 +3,5 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-    path('', addgroups)
+    path('', addgroups, name='addgroup')
 ]
