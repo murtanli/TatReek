@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'register.apps.RegisterConfig',
     'groups.apps.GroupsConfig',
+    'game.apps.GameConfig',
 ]
 
 MIDDLEWARE = [
