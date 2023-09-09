@@ -1,3 +1,12 @@
 from django.db import models
+from django.contrib.auth.models import User
 
-# Create your models here.
+class lobbys(models.Model):
+    lobby_name = models.CharField(max_length=30)
+    ueser1_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='lobby_user1')
+    ueser2_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='lobby_user2', null=True)
+
+
+class search_lobby(models.Model):
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+

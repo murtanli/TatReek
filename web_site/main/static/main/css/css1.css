@@ -1,5 +1,12 @@
 
-
-body {
-    background-color: red;
+header {
+    position: absolute;
+    background-color: #333; /* Цвет фона хедера */
+    color: #fff; /* Цвет текста */
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
 }
+
+.links
