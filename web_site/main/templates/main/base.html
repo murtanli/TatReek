@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <title>{{ active_page }}</title>
+</head>
+<body>
+
+    {% block content %}
+
+    {% endblock %}
+    <footer>
+        <p>&copy; 2020 - 2023, TatReek 10+</p>
+        <a href="" id="a_footer_1">Новости</a>
+        <a href="" id="a_footer_2">Предложения</a>
+        <a href="" id="a_footer_3">Справка</a>
+    </footer>
+</body>
+</html>
+
+
+<style>
+     .element::-webkit-scrollbar {
+          width: 0;
+        }
+
+        /*Убрать полосу прокрутки для всей страницы*/
+        ::-webkit-scrollbar {
+          width: 0;
+        }
+</style>

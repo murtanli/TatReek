@@ -1,0 +1,27 @@
+header{
+    width:100%;
+    background-color: #ffffff;
+    height:70px;
+    color:#000000;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 1;
+}
+p{
+    font-family: serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+#header1{
+    position: fixed;
+    top: 2px;
+    left: 15em;
+}
+#header2{
+    position: fixed;
+    top: 2px;
+    left: 35em;
+}

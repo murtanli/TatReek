@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'groups/css/game_modes.css' %}">
+<div id="mode_container">
+    <h4 id="h4_1">Дуэль</h4>
+    <p id="p_1">Пригласите друзей и вступайте в захватывающие<br> 
+        соревнования. Проверьте, кто из вас лучше знает<br> 
+        Татарстан и готов ли. Культурное путешествие вместе!</p>
+    <a  type="submit" class="btn">Начать</a>
+</div>
+<div id="mode_container2">
+    <h4 id="h4_2">Одиночная игра</h4>
+    <p id="p_2">Представтесь главным исследователем Татарстана.<br> 
+    Путешествуйте в одиночку, разгадывая<br> 
+    головоломки и узновайте о республике в<br> 
+    интерактивных квестах. Это ваше приключение,<br> 
+    ваше путешествие!</p>
+    <a href="{% url 'home' %}" type="submit" class="btn">Начать</a>
+</div>
+{% endblock %}

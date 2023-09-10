@@ -1,14 +1,48 @@
+{% extends 'main/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link type="text/css" href="{% static 'main/css/css1.css' %}" rel="stylesheet" />
-    <title>Title</title>
-</head>
-<body>
-    {% block content %}
-
-    {% endblock %}
-</body>
-</html>
+{% block content %}
+<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+<link rel="stylesheet" href="{% static 'main/css/rectangle.css' %}">
+<p class="h">Игра “Места Татарстана: Угадай где ты”</p>
+        <div id="rectangle_1"><p class="game_discr">Открой новые горизонты игрой в “Места<br> 
+            Татарстана: Угадай где ты” Готов начать<br> 
+            своё увлекательное путешествие по<br> 
+            Татарстану? Нажми кнопку 'Играть' и<br> 
+            отправляйся на захватывающее<br> 
+            приключение!</p></div>
+        <div id="rectangle_1-img1"></div>
+        <div  id="rectangle_1-img2"></div>
+        <div ><img src="{% static 'images/kremlin_1.png' %}" class="kremlin"></div>
+        <div id="rectangle_1-1"></div>
+        <div id="rectangle_1-2"></div>
+        <div id="rectangle_1-button"><a href="{% url 'signup' %}" id="button_1">Играть</a></div>
+        <div id="rectangle_2"><p class="game_discr2"><font id="game_bluename">“Места Татарстана: Угадай где<br> 
+            ты”</font> - это интерактивная игра,<br> 
+            которая приглашает вас на<br> 
+            захватывающее путешествие по<br> 
+            Татарстану, раскрывая его тайны<br> 
+            и красоты через уникальные<br> 
+            панорамные виды.</p></div>
+        <div id="rectangle_3"><img src="{% static 'images/kul_sharif.png' %}" id="rectangle_3-img1"><img src="{% static 'images/lori.png' %}" id="rectangle_3-img2"></div>
+        <div id="rectangle_4"><img src="{% static 'images/chasha.png' %}" id="rectangle_4-img"></div>
+        <div id="rectangle_5">
+            <div id="rectangle_5-img1"></div>
+            <div id="rectangle_5-img2"></div>
+            <p class="features_white">Как работает игра:</p>
+            <ol class="features">
+                <li>Ваше приключение начинается с панорамы<br> виртуального Татарстана.</li>
+                <li>Ваша задача - угадать, где находитесь на этой<br> панораме, используя свои зания о местах и<br> культуре.</li>
+                <li>Выставите свою точку на карте и проверте свои<br> догадки. Сравните свой ответ с реальным<br> местоположением нашего оригинального<br> "Татарскоо ориентира".</li>
+            </ol>
+            <div id="rectangle_5-notebook"><img src="{% static 'images/notebook.png' %}" id=""></div>
+        </div>
+        <div id="rectangle_6">
+            <p id="features2_white">Что ждет вас в игре:</p>
+            <ul id="features2">
+                <li>Увлекательные квесты: Примите участие в<br> захватывающих квестах, раскрывая места и<br> загадки Татарстана.</li>
+                <li>Путешествие в Прошлое и Настоящее: Откройте<br> перед собой моментыистории и культуры,<br> проникнув в тайны каждого уголка Татарстана.</li>
+                <li>Соревнуйтесь и развивайтесь: Улучшайте свои<br> знания и навыки, соревнуясь с другими игроками<br> и разгадывая загадки.</li>
+            </ul>
+        </div>
+        <div id="rectangle_7"><img src="{% static 'images/white_muslim.png' %}" id="rectangle_7-img"></div>
+{% endblock %}

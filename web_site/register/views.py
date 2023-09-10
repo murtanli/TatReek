@@ -1,21 +1,21 @@
-from django.contrib.auth import login, logout
+from django.contrib.auth import logout
 from django.contrib.auth.views import LoginView
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from main.utils import *
 from .forms import *
 from django.views.generic import CreateView
+from django.contrib.auth import login as auth_login
 
 
-
-class sign_up(DataMixin, CreateView):
+class sign_up(DataMixin, CreateView ):
     form_class = RegisterUserForm
-    template_name = 'register/signup.html'
-    success_url = reverse_lazy('home')
+    template_name = 'register/register.html'
+    success_url = reverse_lazy('choice_game')
 
     def form_valid(self, form):
         response = super().form_valid(form)
-        login(self.request, form.instance)
+        auth_login(self.request, form.instance)
         return response
 
     def get_form_kwargs(self):
@@ -31,7 +31,8 @@ class sign_up(DataMixin, CreateView):
 
 class login(DataMixin, LoginView):
     form_class = LoginUserForm
-    template_name = 'register/login.html'
+    template_name = 'register/author.html'
+
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -39,6 +40,8 @@ class login(DataMixin, LoginView):
         c_def = self.get_data()
         return dict(list(context.items()) + list(c_def.items()))
 
+    def get_success_url(self):
+        return reverse_lazy('choice_game')
 def logout_user(request):
     logout(request)
     return redirect('home')

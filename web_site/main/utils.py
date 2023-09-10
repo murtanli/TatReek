@@ -3,6 +3,8 @@
 menu = [
     {'title': "Главная страница", 'url_name': 'home'},
     {'title': "Войти", 'url_name': 'login'},
+    {'title': "Регистрация", 'url_name': 'signup'},
+    {'title': "Выбрать игру", 'url_name': 'choice_game'},
 ]
 """{'title': "LOGIN", 'url_name': 'login'},
 {'title': "SIGN UP", 'url_name': 'signup'},

@@ -1,0 +1,193 @@
+#rectangle_1 {
+    width: 1249px;
+    height: 659px;
+    background: #F3C56B;
+    border-radius: 44px;
+    position: absolute;
+    top: 307px;
+    left: 335px;
+    z-index: ;
+}
+#rectangle_1-img1{
+    position: absolute;
+    width: 319.0000111860345px;
+    height: 326.9166984753593px;
+    top: 523px;
+    left: 1080px;
+    transform: rotate(-44.03deg);
+    background-color: #AAF86D;
+    z-index: ;
+}
+#rectangle_1-img2{
+    position: absolute;
+    width: 319.0000111860345px;
+    height: 360px;
+    top: 504px;
+    left: 1150px;
+    background-color: #88BFF1;  
+    border-top-right-radius: 4000px;
+    border-top-left-radius: 10000px;
+    border-bottom-right-radius: 10000px;
+    transform: rotate(-25deg);
+    z-index: ;
+}
+#rectangle_1-1{
+    position: absolute;
+    width: 294px;
+    height: 70px;
+    top: 733px;
+    left: 503px;
+    border-radius: 11px;
+    border: 1px;
+    border: 3px solid #47CFFA;
+    z-index: ;
+}
+#rectangle_1-2{
+    position: absolute;
+    width: 294px;
+    height: 70px;
+    top: 753px;
+    left: 479px;
+    border-radius: 11px;
+    border: 3px solid #47CFFA;
+    background: #F3C56B;
+    z-index: ;
+}
+#rectangle_2{
+    position: absolute;
+    width: 644.8516845703125px;
+    height: 605.075927734375px;
+    top: 1239.3422241210938px;
+    left: -0.000244140625px;
+    background: #9AFF98;
+    box-shadow: -16px 40px 13px -2px #00000040;
+    transform: rotate(-30deg);
+}
+#rectangle_3{
+    position: absolute;
+    width: 959.7266916155073px;
+    height: 562.3501628195257px;
+    top: 1800px;
+    left: 1163.06005859375px;
+    transform: rotate(9.01deg);
+    background: #4891FF;
+    box-shadow: 19px 37px 16px 0px #00000040;
+}
+#rectangle_3-img1{
+    position: absolute;
+    width: 1150px;
+    height: 750px;
+    top: -120px;
+    left: -250px;
+    transform: rotate(-9deg);
+}
+#rectangle_3-img2{
+    position: absolute;
+    width: 1650px;
+    height: 1350px;
+    top: -265px;
+    left: -345px;
+    transform: rotate(-9deg);
+}
+#rectangle_4{
+    position: absolute;
+    width: 644.851701659537px;
+    height: 605.0759437695015px;
+    top: 2400px;
+    left: -20px;
+    transform: rotate(-16.3deg);
+    background: #9AFF98;
+    box-shadow: -16px 40px 13px -2px #00000040;
+    overflow: hidden;
+}
+#rectangle_4-img{
+    position: absolute;
+    width: 850px;
+    height: 650px;
+    top: ;
+    left: -180px;
+
+}
+#rectangle_5{
+    position:absolute;
+    width: 1050px;
+    height: 750px;
+    flex-shrink: 0;
+    background: #B090F4;
+    box-shadow: -16px 40px 13px -2px rgba(0, 0, 0, 0.25);
+    top: 2800px;
+    right: -20px;
+    transform:rotate(4deg);
+}
+
+#rectangle_5-img1{
+    position: absolute;
+    width: 319.0000111860345px;
+    height: 326.9166984753593px;
+    top: 210px;
+    left: 400px;
+    transform: rotate(-40.03deg);
+    background-color: #AAF86D;
+    z-index: ;
+}
+#rectangle_5-img2{
+    position: absolute;
+    width: 319.0000111860345px;
+    height: 360px;
+    top: 241px;
+    left: 223px;
+    background-color: #F3C56B;  
+    border-top-right-radius: 4000px;
+    border-top-left-radius: 10000px;
+    border-bottom-right-radius: 10000px;
+    transform: rotate(-15deg);
+    transform:scale(-1,1);
+    z-index: ;
+}
+#rectangle_5-notebook{
+    position: absolute;
+    width:400px;
+    height: 200px;
+    top: 400px;
+    left: 50px;
+    opacity: 0;
+}
+
+#rectangle_6{
+    position: absolute;
+    width: 1250px;
+    height: 641px;
+    top: 3700px;
+    left: -5px;
+    box-shadow: -16px 40px 13px -2px #00000040;
+    background-color: #5CA87B;
+    transform: rotate(-2.5deg);
+}
+#rectangle_7{
+    position: absolute;
+    width: 644.8516926553524px;
+    height: 605.0759353207133px;
+    top: 4500px;
+    left: 1350px;
+    transform: rotate(6deg);
+    box-shadow: -16px 40px 13px -2px #00000040;
+    background-color: #FFA498;
+    overflow: hidden;
+}
+#rectangle_7-img{
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    top: -110px;
+    left: -85px;
+    transform: rotate(-5deg);
+}
+.kremlin{
+    position: absolute;
+    width: 1200px;
+    height: 650px;
+    top: 316px;
+    left: 384px;
+    z-index: ;
+    border-bottom-right-radius: 44px;
+}
