@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
 def game(request):
-    pass
+    return render(request, 'game/sit1.html')
 def stop(request):
     pass

@@ -7,7 +7,7 @@
     <p id="p_1">Пригласите друзей и вступайте в захватывающие<br> 
         соревнования. Проверьте, кто из вас лучше знает<br> 
         Татарстан и готов ли. Культурное путешествие вместе!</p>
-    <a  type="submit" class="btn">Начать</a>
+    <button id="room-name-submit"  type="submit" class="btn">Начать</button>
 </div>
 <div id="mode_container2">
     <h4 id="h4_2">Одиночная игра</h4>
@@ -16,6 +16,22 @@
     головоломки и узновайте о республике в<br> 
     интерактивных квестах. Это ваше приключение,<br> 
     ваше путешествие!</p>
-    <a href="{% url 'home' %}" type="submit" class="btn">Начать</a>
+    <a id="room-name-submit" href="{% url 'home' %}" type="submit" class="btn">Начать</a>
 </div>
+<script>
+    document.querySelector('#room-name-submit').onclick = function(e) {
+    window.location.pathname = '/game/' + generateRandomText(10) + '/';
+};  
+function generateRandomText(length) {
+    const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    let randomText = "";
+
+    for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * charset.length);
+        randomText += charset.charAt(randomIndex);
+    }
+
+    return randomText;
+}
+</script>
 {% endblock %}

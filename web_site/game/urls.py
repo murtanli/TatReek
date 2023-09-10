@@ -1,6 +1,6 @@
-from django.urls import path
+from django.urls import path, re_path
 from .views import *
 urlpatterns = [
-    path('<str:room_name>/', game,name='game'),
+    re_path(r'^[a-zA-Z0-9]+/$', game,name='game'),
     path('finish/', stop, name='stop')
 ]
